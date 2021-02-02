@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Card from "../components/Cards";
+import EpisodesCards from "../components/EpisodesCards";
 
 export default function Episodes() {
   const [episodes, setEpisodes] = useState([]);
@@ -17,10 +17,14 @@ export default function Episodes() {
 
   return (
     <>
+      <div className="episodios">
+        <h1>Episodios</h1>
+        <h4>Algunos Espisodios de la Primera Temporada</h4>
+      </div>
       {episodes ? (
         <div>
           {episodes.map((episode, index) => {
-            return <Card key={index} episode={episode} />;
+            return <EpisodesCards key={index} episodio={episode} />;
           })}
         </div>
       ) : (
