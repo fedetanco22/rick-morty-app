@@ -6,8 +6,12 @@
 }
 
 .personajes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 400px;
+    height: 700px;
     text-align: center;
     /* background-image: url('/static/media/bg-personajes.74e341a9.jpg'); */
     background-image: url('https://fondosmil.com/fondo/27347.jpg');
@@ -19,16 +23,16 @@
 }
 
 
-.personajes h1{
-    padding-top: 150px;
-}
-
 .episodios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 400px;
+    height: 700px;
     text-align: center;
     /* background-image: url('/static/media/bg-personajes.74e341a9.jpg'); */
-    background-image: url('https://fondosmil.com/fondo/27347.jpg');
+    background-image: url('https://d32qys9a6wm9no.cloudfront.net/images/tvs/backdrop/33/ebd8d86e963e00e09b2b832666d4eba5_706x397.jpg?t=1582864962');
     background-size: cover;
     background-repeat: no-repeat;
     color: #ffffff;
