@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-
+import Home from "./containers/Home";
 import Episodes from "./containers/EpisodesContainer";
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
 
         <Switch>
           <Route exact path="/">
-            {/* <Home /> */}
+            <Home />
           </Route>
           <Route exact path="/characters">
             {/* <Characters /> */}
