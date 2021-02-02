@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-
 import Episodes from "./containers/EpisodesContainer";
+import CharactersContainer from "./containers/CharactersContainer"
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
             {/* <Home /> */}
           </Route>
           <Route exact path="/characters">
-            {/* <Characters /> */}
+          <CharactersContainer />
           </Route>
           <Route exact path="/episodes">
             <Episodes />

@@ -1,0 +1,28 @@
+.card-character{
+    width: 18rem;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-character img{
+    width: 100%;
+}
+ 
+.card-character-footer{
+    background-color: #426947;
+    padding: 30px;
+}
+
+.card-character-footer h1{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.card-character-footer h2{
+    color: #ffffff;
+}
+
+.card-character-footer h3{
+    color: #ffffff;
+}
