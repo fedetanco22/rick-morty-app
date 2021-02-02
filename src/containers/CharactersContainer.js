@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import CharactersCards from "../components/CharactersCards";
-import './container-personajes.css'
+import "./CardContainers.css";
 
-const CharactersContainer = () =>{
+const CharactersContainer = () => {
   const [characters, setCharacters] = useState([]);
 
   useEffect(() => {
@@ -25,7 +25,7 @@ const CharactersContainer = () =>{
       {characters ? (
         <div className="personajes-container">
           {characters.map((character, index) => {
-            return <CharactersCards index={index} character={character}/>;
+            return <CharactersCards key={index} character={character} />;
           })}
         </div>
       ) : (
@@ -33,5 +33,5 @@ const CharactersContainer = () =>{
       )}
     </>
   );
-}
-export default CharactersContainer
+};
+export default CharactersContainer;

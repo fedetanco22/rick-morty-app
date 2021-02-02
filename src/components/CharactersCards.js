@@ -1,13 +1,13 @@
-import './cards.css'
+import "./Cards.css";
 
-const CharactersCards = ({character}) => (
-    <div className="card-character">
-        <img src={character.image} alt="character"/>
-        <div className="card-character-footer">
-            <h1>Nombre: {character.name}</h1>
-            <h2>Estatus: {character.status} </h2>
-            <h3>Especie: {character.species}</h3>
-        </div>
+const CharactersCards = ({ character }) => (
+  <div className="card-character">
+    <img src={character.image} alt="character"></img>
+    <div className="card-character-footer">
+      <h1>Nombre: {character.name}</h1>
+      <h2>Estatus: {character.status} </h2>
+      <h3>Especie: {character.species}</h3>
     </div>
-    )
-export default CharactersCards
+  </div>
+);
+export default CharactersCards;

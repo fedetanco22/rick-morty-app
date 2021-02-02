@@ -24,12 +24,12 @@ export default function NavBar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <NavLink to="/" className="nav-link active" aria-current="page">
+              <NavLink to="/" className="nav-link ">
                 Home
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/characters" className="nav-link active">
+              <NavLink to="/characters" className="nav-link">
                 Personajes
               </NavLink>
             </li>

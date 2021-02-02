@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import EpisodesCards from "../components/EpisodesCards";
+import "./CardContainers.css";
 
 export default function Episodes() {
   const [episodes, setEpisodes] = useState([]);
@@ -22,7 +23,7 @@ export default function Episodes() {
         <h4>Algunos Espisodios de la Primera Temporada</h4>
       </div>
       {episodes ? (
-        <div>
+        <div className="personajes-container">
           {episodes.map((episode, index) => {
             return <EpisodesCards key={index} episodio={episode} />;
           })}
