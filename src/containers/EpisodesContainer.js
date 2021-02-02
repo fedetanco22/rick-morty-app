@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import EpisodesCards from "../components/EpisodesCards";
-import "./CardContainers.css";
+import "./Containers.css";
 
 export default function Episodes() {
   const [episodes, setEpisodes] = useState([]);

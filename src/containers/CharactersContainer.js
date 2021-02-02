@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import CharactersCards from "../components/CharactersCards";
-import "./CardContainers.css";
+import "./Containers.css";
 
 const CharactersContainer = () => {
   const [characters, setCharacters] = useState([]);
