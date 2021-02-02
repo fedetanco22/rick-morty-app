@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+import Card from "../components/Cards";
 
 export default function Episodes() {
   const [episodes, setEpisodes] = useState([]);
@@ -18,8 +19,8 @@ export default function Episodes() {
     <>
       {episodes ? (
         <div>
-          {episodes.map((episode, id) => {
-            return <p key={id}>{episode.name}</p>;
+          {episodes.map((episode, index) => {
+            return <Card key={index} episode={episode} />;
           })}
         </div>
       ) : (

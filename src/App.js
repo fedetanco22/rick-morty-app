@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import Episodes from "./containers/Episodes";
+import Episodes from "./containers/EpisodesContainer";
 
 function App() {
   return (
@@ -10,9 +10,13 @@ function App() {
         <h1>Nuestra Rick and Morty App</h1>
 
         <Switch>
-          <Route path="/home">{/* <Home /> */}</Route>
-          <Route path="/characters">{/* <Characters /> */}</Route>
-          <Route path="/episodes">
+          <Route exact path="/">
+            {/* <Home /> */}
+          </Route>
+          <Route exact path="/characters">
+            {/* <Characters /> */}
+          </Route>
+          <Route exact path="/episodes">
             <Episodes />
           </Route>
         </Switch>
