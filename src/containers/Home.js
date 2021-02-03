@@ -3,12 +3,15 @@ export default function Home() {
   return (
     <>
       <div className="home">
-        <h1>Bienvenidos a Rick Tok</h1>
-        <h4>Todo sobre Rick & Morty</h4>
-      </div>
-      <div>
-        <h2>Informate sobre tu Serie Preferida</h2>
-        <h4>Esta es una aplicacion para buscar información</h4>
+        <div>
+          <h1 className="home-text-h1">Bienvenidos a Rick Tok</h1>
+          <h4 className="home-text-h4">Todo sobre Rick & Morty</h4>
+        </div>
+
+        <div className="home-text">
+          <h4>Informate sobre tu Serie Preferida</h4>
+          <h6>Esta es una aplicacion para buscar información</h6>
+        </div>
       </div>
     </>
   );
